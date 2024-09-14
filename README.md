@@ -24,10 +24,10 @@ Ensure you have the following installed on your system
 1. Clone the Repository
 ```bash
 git clone https://github.com/Yemisi-jay/Quiz-Titan.git
-cd quiz-titan
+cd quiz-titan```
 
-2. Create and Activate Virtual Environment
+#### Create and Activate Virtual Environment
 ```bash
 python3 -m venv .venv
-source .venv/bin/activate <!-- For Linux/Mac -->
-.venv\Scripts\activate <!-- For windows -->
+source .venv/bin/activate <-- For Linux/Mac -->
+.venv\Scripts\activate <-- For windows -->
