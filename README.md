@@ -35,10 +35,10 @@ Ensure you have the following installed on your system
  ```
 3. Install Dependencies:
    Use the `requirements.txt` file to install the necessary packages:
-   ```bash
-   pip install -r requirements.txt
-   ```
- 4. setup the Database
+```bash
+pip install -r requirements.txt
+```
+4. setup the Database
     Perform initial migrations to set up the database schema:
     ```bash
     python manage.py migrate
