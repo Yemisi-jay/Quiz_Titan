@@ -56,4 +56,5 @@ Ensure you have the following installed on your system
 + Visit `http://127.0.0.1:8000` to start the game.
 + Admin panel: `http://127.0.0.1:8000/admin` for managing players and scores.
     
-   
+## Setup and Configuration
+**1. Database Configuration:** By default, the project uses SQLite as its database. If you wish to use another database (e.g. PostgreSQL), update the `DATABASES` setting in `settings.py`
