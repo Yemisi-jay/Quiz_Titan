@@ -75,7 +75,7 @@ you can modify or add more questions to this file
 + CSS
 + JavaScript
 
-**Third-Party APIs:
+**Third-Party APIs:**
 + Open Trivia Database API for fetching trivia questions
 
 ## Features
