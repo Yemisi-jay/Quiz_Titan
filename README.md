@@ -6,3 +6,21 @@ track scores across multiple rounds.
 
 ## Table of Contents
 + Features
++ Installation
++ Setup and Configuration
++ How to play
++ Teck Stack
++ Development Workflow
++ Challenges & Impronements
+
+## Installations
+### Prerequisites
+Ensure you have the following installed on your system
++ Python 3.x
++ Virtualenv
++ Git
+
+### Steps
+1. Clone the Repository
+   ```git clone https://github.com/Yemisi-jay/quiz-titan.git
+      cd quiz-titan```
