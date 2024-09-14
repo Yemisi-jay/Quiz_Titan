@@ -4,13 +4,15 @@ body {
     color: #333;
     text-align: center;
     padding: 20px;
+
 }
 
 header {
-    background-color: #333;
+    background-color: #4CAF50;
     color: #fff;
     padding: 10px 0;
     margin-bottom: 20px;
+    border-radius: 10px;
 }
 
 form, #question-container {
@@ -39,7 +41,7 @@ button {
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: limegreen;
 }
 
 #feedback {
@@ -50,4 +52,94 @@ button:hover {
 .options-container button {
     display: block;
     margin: 10px auto;
+
 }
+
+.game-over {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+}
+/*footer {*/
+/*    background-color: #4CAF50;*/
+/*    color: white;*/
+/*    text-align: center;*/
+/*    padding: 20px;*/
+/*    position: relative;*/
+/*    border-top-left-radius: 30px;*/
+/*    border-top-right-radius: 30px;*/
+/*    width: 100%*/
+/*}*/
+/*!* General Game Styling *!*/
+
+/*body {*/
+/*    font-family: 'Arial', sans-serif;*/
+/*    background: linear-gradient(135deg, #f5a623, #f76b1c);*/
+/*    color: #fff;*/
+/*    text-align: center;*/
+/*}*/
+
+/*button {*/
+/*    background-color: #ffffff;*/
+/*    border: none;*/
+/*    padding: 10px 20px;*/
+/*    font-size: 16px;*/
+/*    margin: 10px;*/
+/*    cursor: pointer;*/
+/*    border-radius: 5px;*/
+/*    transition: all 0.3s ease;*/
+/*}*/
+
+/*button:hover {*/
+/*    background-color: #f5a623;*/
+/*    color: white;*/
+/*}*/
+
+/*h1 {*/
+/*    font-size: 2.5rem;*/
+/*    margin-bottom: 20px;*/
+/*}*/
+
+/*!* Correct and Wrong Answer Animations *!*/
+/*.correct-answer {*/
+/*    background-color: green;*/
+/*    color: white;*/
+/*    transform: scale(1.2);*/
+/*    transition: transform 0.3s ease-in-out;*/
+/*}*/
+
+/*.wrong-answer {*/
+/*    background-color: red;*/
+/*    color: white;*/
+/*    transform: scale(1.2);*/
+/*    transition: transform 0.3s ease-in-out;*/
+/*}*/
+
+/*!* Game Over Styling *!*/
+/*.game-over {*/
+/*    font-size: 3rem;*/
+/*    margin-top: 50px;*/
+/*    animation: fadeIn 2s ease-in-out;*/
+/*}*/
+
+/*@keyframes fadeIn {*/
+/*    from {*/
+/*        opacity: 0;*/
+/*    }*/
+/*    to {*/
+/*        opacity: 1;*/
+/*    }*/
+/*}*/
+
+/*!* Responsive Design *!*/
+/*@media only screen and (max-width: 600px) {*/
+/*    h1 {*/
+/*        font-size: 2rem;*/
+/*    }*/
+
+/*    button {*/
+/*        font-size: 14px;*/
+/*        padding: 8px 16px;*/
+/*    }*/
+/*}*/
+
