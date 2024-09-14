@@ -22,5 +22,5 @@ Ensure you have the following installed on your system
 
 ### Steps
 1. Clone the Repository
-   ```git clone https://github.com/Yemisi-jay/quiz-titan.git
+      git clone https://github.com/Yemisi-jay/quiz-titan.git
       cd quiz-titan
