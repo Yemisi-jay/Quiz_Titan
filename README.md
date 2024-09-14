@@ -22,5 +22,7 @@ Ensure you have the following installed on your system
 
 ### Steps
 1. Clone the Repository
-```   git clone https://github.com/Yemisi-jay/quiz-titan.git
-      cd quiz-titan
+```bash
+git clone https://github.com/Yemisi-jay/quiz-titan.git
+cd quiz-titan
+2. Create and Activate Virtual Environment
