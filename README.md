@@ -21,36 +21,39 @@ Ensure you have the following installed on your system
 + Git
 
 ### Steps
-1. Clone the Repository
+**1. Clone the Repository**
  ```bash
   git clone https://github.com/Yemisi-jay/Quiz-Titan.git
   cd quiz-titan
   ```
 
-2. Create and Activate Virtual Environment
+**2. Create and Activate Virtual Environment**
  ```bash
   python3 -m venv .venv
   source .venv/bin/activate <-- For Linux/Mac -->
   .venv\Scripts\activate <-- For windows -->
  ```
-3. Install Dependencies:
+**3. Install Dependencies:**
    Use the `requirements.txt` file to install the necessary packages:
  ```bash
  pip install -r requirements.txt
  ```
-4. setup the Database
+**4. Setup the Database**
     Perform initial migrations to set up the database schema:
  ```bash
  python manage.py migrate
  ```
-5. Create a Superuser (Admin Access):
+**5. Create a Superuser (Admin Access):**
    Create an admin user to manage the game via the Django Admin panel:
  ```bash
  python manahe.py createsuperuser
  ```
-6. run the Development Server:
+**6. run the Development Server:**
  ```bash
  python manage.py runsever
  ```
+**7. Access the Game:**
++ Visit `http://127.0.0.1:8000` to start the game.
++ Admin panel: `http://127.0.0.1:8000/admin` for managing players and scores.
     
    
