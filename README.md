@@ -60,6 +60,8 @@ Ensure you have the following installed on your system
 **1. Database Configuration:** By default, the project uses SQLite as its
 database. If you wish to use another database (e.g. PostgreSQL), update the
 `DATABASES` setting in `settings.py`.
+
 **2. OpenTDB API Configuration:** Questions are fetched from the Open Trivia
 Database API. The default endpoint is configured in `views.py`.
+
 **3. Fallback Questions:** If the API fails, the game will load pre-recorded questions from a local `fallback_questions.json` file located in `data/`. you can modify or add more questions to this file
