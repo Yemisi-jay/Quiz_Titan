@@ -35,22 +35,22 @@ Ensure you have the following installed on your system
  ```
 3. Install Dependencies:
    Use the `requirements.txt` file to install the necessary packages:
-```bash
-pip install -r requirements.txt
-```
+ ```bash
+ pip install -r requirements.txt
+ ```
 4. setup the Database
     Perform initial migrations to set up the database schema:
-    ```bash
-    python manage.py migrate
-    ```
+ ```bash
+ python manage.py migrate
+ ```
 5. Create a Superuser (Admin Access):
    Create an admin user to manage the game via the Django Admin panel:
-   ```bash
-   python manahe.py createsuperuser
-   ```
+ ```bash
+ python manahe.py createsuperuser
+ ```
 6. run the Development Server:
-   ```bash
-   python manage.py runsever
-   ```
+ ```bash
+ python manage.py runsever
+ ```
     
    
