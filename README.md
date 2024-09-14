@@ -26,8 +26,8 @@ Ensure you have the following installed on your system
 git clone https://github.com/Yemisi-jay/Quiz-Titan.git
 cd quiz-titan
 
-3. Create and Activate Virtual Environment
-  `bash
+2. Create and Activate Virtual Environment
+```bash
   python3 -m venv .venv
   source .venv/bin/activate <-- For Linux/Mac -->
   .venv\Scripts\activate <-- For windows -->`
