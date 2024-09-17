@@ -1,68 +1,3 @@
-
-// document.addEventListener('DOMContentLoaded', () => {
-//     const questionContainer = document.getElementById('question-container');
-//     const nextQuestionBtn = document.getElementById('next-question-btn');
-//     let currentQuestionIndex = 0;
-//     let score = 0;
-//     let timer;
-//
-//     function startTimer() {
-//         let timeLeft = 300; // 5 minutes
-//         timer = setInterval(() => {
-//             timeLeft--;
-//             document.getElementById('timer').textContent = `Time Left: ${timeLeft}s`;
-//             if (timeLeft <= 0) {
-//                 clearInterval(timer);
-//                 endGame();
-//             }
-//         }, 1000);
-//     }
-//
-//     function loadQuestion() {
-//         const questionData = JSON.parse('{{ questions|escapejs }}');
-//         if (currentQuestionIndex < questionData.length) {
-//             const question = questionData[currentQuestionIndex];
-//             document.getElementById('question').textContent = question.question;
-//             const optionsContainer = document.getElementById('options');
-//             optionsContainer.innerHTML = ''; // Clear previous options
-//
-//             [...question.incorrect_answers, question.correct_answer].sort().forEach(option => {
-//                 const button = document.createElement('button');
-//                 button.className = 'option-btn';
-//                 button.textContent = option;
-//                 button.addEventListener('click', () => checkAnswer(option, question.correct_answer));
-//                 optionsContainer.appendChild(button);
-//             });
-//         } else {
-//             endGame();
-//         }
-//     }
-//
-//     function checkAnswer(selectedOption, correctOption) {
-//         const feedback = document.getElementById('feedback');
-//         if (selectedOption === correctOption) {
-//             feedback.textContent = 'Correct! Well done!';
-//             score += 10;
-//             document.getElementById('score').textContent = `Score: ${score}`;
-//         } else {
-//             feedback.textContent = `Wrong answer. The correct answer was: ${correctOption}`;
-//         }
-//         currentQuestionIndex++;
-//         setTimeout(loadQuestion, 2000); // Load next question after 2 seconds
-//     }
-//
-//     function endGame() {
-//         document.getElementById('game-over-container').style.display = 'block';
-//         document.getElementById('question-container').style.display = 'none';
-//         // Send the score to the server or save it as needed
-//     }
-//
-//     startTimer();
-//     loadQuestion();
-//
-//     nextQuestionBtn.addEventListener('click', () => loadQuestion());
-// });
-
 document.addEventListener('DOMContentLoaded', function() {
     fetchQuestions();
     document.getElementById('next-question-btn').addEventListener('click', function() {
@@ -74,7 +9,7 @@ let questions = [];
 let currentQuestionIndex = 0;
 let score = 0;
 let timerInterval;
-const initialTime = 120; // 5 minutes
+const initialTime = 120; // 2 minutes
 let timeLeft = initialTime;
 
 function fetchQuestions() {
@@ -128,9 +63,24 @@ function handleAnswer(selectedAnswer, correctAnswer) {
     // Display feedback based on the answer
     if (isCorrect) {
         feedback.textContent = 'Correct! Amazing!';
+        feedback.style.color ='#154115'
+
+        feedback.classList.add('shake');
+
+        setTimeout(() => {
+            feedback.classList.remove('shake');
+        }, 500);
+
         score += 10;  // Update local score
     } else {
         feedback.textContent = `Wrong! The correct answer is ${correctAnswer}.`;
+        feedback.style.color = 'red'
+
+        feedback.classList.add('shake');
+
+        setTimeout(() => {
+            feedback.classList.remove('shake');
+        }, 500);
     }
     document.getElementById('score').textContent = `Score: ${score}`;
 
