@@ -43,7 +43,7 @@ def quiz(request):
     player_name = request.session.get('player_name', 'Guest')
     genre = request.session.get('genre', '9')
     difficulty = request.session.get('difficulty', 'easy')
-    # url = f'https://opentdb.com/api.php?amount=10&category={genre}&difficulty={difficulty}&type=multiple'
+    url = f'https://opentdb.com/api.php?amount=10&category={genre}&difficulty={difficulty}&type=multiple'
 
     try:
         response = requests.get(url)
