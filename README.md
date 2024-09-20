@@ -43,7 +43,7 @@ Ensure you have the following installed on your system
 **5. Create a Superuser (Admin Access):**
    Create an admin user to manage the game via the Django Admin panel:
  ```bash
- python manahe.py createsuperuser
+ python manage.py createsuperuser
  ```
 **6. run the Development Server:**
  ```bash
